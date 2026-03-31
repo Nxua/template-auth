@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowly — Pricing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><div class="nav-logo-icon">F</div>Flowly</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="pricing.html" class="active">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="login.html" class="btn-ghost-sm">Log In</a>
+    <a href="signup.html" class="btn-primary-sm">Start Free Trial</a>
+  </div>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero" style="text-align:center;">
+  <div class="page-hero-inner" style="text-align:center;">
+    <div class="section-label" style="display:block; text-align:center;">Pricing</div>
+    <h1 style="max-width:560px; margin:0 auto .75rem;">Simple, transparent <span>pricing.</span></h1>
+    <p style="max-width:440px; margin:0 auto;">No hidden fees. No long-term contracts. Upgrade or cancel anytime.</p>
+    <div style="display:inline-flex; background:var(--surface); border:1px solid var(--border); border-radius:100px; padding:.3rem; margin-top:2rem; gap:.25rem;">
+      <button id="monthly-btn" onclick="toggleBilling('monthly')" style="padding:.5rem 1.25rem; border-radius:100px; border:none; font-size:.85rem; font-weight:700; background:var(--purple); color:white; cursor:pointer;">Monthly</button>
+      <button id="annual-btn" onclick="toggleBilling('annual')" style="padding:.5rem 1.25rem; border-radius:100px; border:none; font-size:.85rem; font-weight:700; background:none; color:var(--muted); cursor:pointer;">Annual <span style="background:rgba(34,197,94,.12); color:var(--success); font-size:.7rem; padding:.15rem .5rem; border-radius:4px; margin-left:.3rem;">-20%</span></button>
+    </div>
+  </div>
+</div>
+
+<section style="background:var(--bg)">
+  <div class="container">
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="pc-tier">Starter</div>
+        <div class="pc-price">R799<span>/mo</span></div>
+        <p class="pc-desc">Perfect for solo operators and small teams just getting started.</p>
+        <ul class="pc-features">
+          <li>Up to 250 customers</li>
+          <li>5 team members</li>
+          <li>Basic analytics</li>
+          <li>Email support</li>
+          <li>10 automations</li>
+          <li class="na">Custom reporting</li>
+          <li class="na">Priority support</li>
+          <li class="na">API access</li>
+        </ul>
+        <a href="signup.html" class="btn-outline">Get Started</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="pc-tier">Pro</div>
+        <div class="pc-price">R2,400<span>/mo</span></div>
+        <p class="pc-desc">For growing businesses that need more power and flexibility.</p>
+        <ul class="pc-features">
+          <li>Unlimited customers</li>
+          <li>20 team members</li>
+          <li>Advanced analytics</li>
+          <li>Priority email + chat</li>
+          <li>Unlimited automations</li>
+          <li>Custom reporting</li>
+          <li class="na">Priority support</li>
+          <li class="na">API access</li>
+        </ul>
+        <a href="signup.html" class="btn-primary" style="display:flex; width:100%;">Start Pro Trial →</a>
+      </div>
+
+      <div class="price-card">
+        <div class="pc-tier">Business</div>
+        <div class="pc-price">R4,800<span>/mo</span></div>
+        <p class="pc-desc">Enterprise-grade power with dedicated support and full API.</p>
+        <ul class="pc-features">
+          <li>Unlimited everything</li>
+          <li>Unlimited team</li>
+          <li>AI-powered reports</li>
+          <li>Dedicated account manager</li>
+          <li>Unlimited automations</li>
+          <li>Custom reporting</li>
+          <li>Priority support</li>
+          <li>Full API access</li>
+        </ul>
+        <a href="contact.html" class="btn-outline">Contact Sales</a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="margin-top:5rem; max-width:700px; margin-left:auto; margin-right:auto;">
+      <h2 class="section-title" style="text-align:center; margin-bottom:2.5rem;">Common questions.</h2>
+      <div style="display:flex; flex-direction:column; gap:.75rem;">
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1.5rem;">
+          <div style="font-weight:700; color:var(--dark); margin-bottom:.5rem;">Can I change plans later?</div>
+          <div style="font-size:.88rem; color:var(--muted);">Yes. Upgrade or downgrade at any time. Changes take effect at the next billing cycle.</div>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1.5rem;">
+          <div style="font-weight:700; color:var(--dark); margin-bottom:.5rem;">What payment methods do you accept?</div>
+          <div style="font-size:.88rem; color:var(--muted);">We accept all major credit cards, EFT, and PayFast for South African customers.</div>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1.5rem;">
+          <div style="font-weight:700; color:var(--dark); margin-bottom:.5rem;">Is there a free trial?</div>
+          <div style="font-size:.88rem; color:var(--muted);">All plans come with a 14-day free trial, no credit card required.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem;"><div class="nav-logo-icon">F</div><span style="font-size:1.1rem; font-weight:800; color:white;">Flowly</span></div><p>The all-in-one platform for modern business operations.</p></div>
+    <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div class="footer-col"><h4>Account</h4><ul><li><a href="login.html">Log In</a></li><li><a href="signup.html">Sign Up</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Flowly Inc.</span><span>Template by Sitelabs</span></div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function toggleBilling(type) {
+  const mb = document.getElementById('monthly-btn');
+  const ab = document.getElementById('annual-btn');
+  if (type === 'monthly') {
+    mb.style.cssText = 'padding:.5rem 1.25rem; border-radius:100px; border:none; font-size:.85rem; font-weight:700; background:var(--purple); color:white; cursor:pointer;';
+    ab.style.cssText = 'padding:.5rem 1.25rem; border-radius:100px; border:none; font-size:.85rem; font-weight:700; background:none; color:var(--muted); cursor:pointer;';
+  } else {
+    ab.style.cssText = 'padding:.5rem 1.25rem; border-radius:100px; border:none; font-size:.85rem; font-weight:700; background:var(--purple); color:white; cursor:pointer;';
+    mb.style.cssText = 'padding:.5rem 1.25rem; border-radius:100px; border:none; font-size:.85rem; font-weight:700; background:none; color:var(--muted); cursor:pointer;';
+  }
+}
+</script>
+</body>
+</html>

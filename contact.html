@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowly — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><div class="nav-logo-icon">F</div>Flowly</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="login.html" class="btn-ghost-sm">Log In</a>
+    <a href="signup.html" class="btn-primary-sm">Start Free Trial</a>
+  </div>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">Get in Touch</div>
+    <h1>We're here to <span>help.</span></h1>
+    <p>Sales, support, or general enquiries — our team responds within 2 hours on weekdays.</p>
+  </div>
+</div>
+
+<section style="background:var(--bg)">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+      <div>
+        <h3 style="font-size:1.1rem; font-weight:800; color:var(--dark); margin-bottom:1.5rem;">Contact options</h3>
+        <div style="display:flex; flex-direction:column; gap:1rem; margin-bottom:2.5rem;">
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; display:flex; gap:1rem; align-items:center;">
+            <div style="width:44px; height:44px; background:var(--purple-light); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0;">📧</div>
+            <div><div style="font-size:.75rem; color:var(--muted); margin-bottom:.2rem;">Email</div><div style="font-weight:700; color:var(--dark)">hello@flowly.co.za</div></div>
+          </div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; display:flex; gap:1rem; align-items:center;">
+            <div style="width:44px; height:44px; background:var(--purple-light); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0;">💬</div>
+            <div><div style="font-size:.75rem; color:var(--muted); margin-bottom:.2rem;">Live Chat</div><div style="font-weight:700; color:var(--dark)">Available in-app, 8am–6pm</div></div>
+          </div>
+          <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; display:flex; gap:1rem; align-items:center;">
+            <div style="width:44px; height:44px; background:var(--purple-light); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0;">📅</div>
+            <div><div style="font-size:.75rem; color:var(--muted); margin-bottom:.2rem;">Book a Demo</div><div style="font-weight:700; color:var(--dark)">30-min product walkthrough</div></div>
+          </div>
+        </div>
+
+        <div style="background:var(--purple-light); border:1px solid rgba(108,71,255,.15); border-radius:14px; padding:1.5rem;">
+          <div style="font-size:.75rem; font-weight:800; text-transform:uppercase; letter-spacing:.1em; color:var(--purple); margin-bottom:.75rem;">Already a customer?</div>
+          <p style="font-size:.88rem; color:var(--muted); margin-bottom:1rem;">Log in to access in-app support, which gets you priority responses and access to your account history.</p>
+          <a href="login.html" style="font-size:.88rem; font-weight:700; color:var(--purple); display:inline-flex; align-items:center; gap:.35rem;">Go to Dashboard →</a>
+        </div>
+      </div>
+
+      <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:2.5rem; box-shadow:var(--shadow);">
+        <h3 style="font-size:1.1rem; font-weight:800; color:var(--dark); margin-bottom:1.5rem;">Send us a message</h3>
+        <div class="form-field"><label>Full Name</label><input type="text" placeholder="Sarah Johnson" /></div>
+        <div class="form-field"><label>Email</label><input type="email" placeholder="sarah@company.com" /></div>
+        <div class="form-field">
+          <label>Reason for contact</label>
+          <select style="width:100%; padding:.75rem 1rem; border:1.5px solid var(--border); border-radius:var(--radius); font-size:.9rem; font-family:inherit; color:var(--text); background:white; outline:none;">
+            <option>General enquiry</option>
+            <option>Sales / pricing question</option>
+            <option>Technical support</option>
+            <option>Billing issue</option>
+            <option>Partnership</option>
+          </select>
+        </div>
+        <div class="form-field"><label>Message</label><textarea rows="4" placeholder="How can we help you?" style="width:100%; padding:.75rem 1rem; border:1.5px solid var(--border); border-radius:var(--radius); font-size:.9rem; font-family:inherit; color:var(--text); background:white; outline:none; resize:vertical;"></textarea></div>
+        <button class="btn-primary" style="display:flex; border:none; cursor:pointer; font-size:.95rem;">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem;"><div class="nav-logo-icon">F</div><span style="font-size:1.1rem; font-weight:800; color:white;">Flowly</span></div><p>The all-in-one platform for modern business operations.</p></div>
+    <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div class="footer-col"><h4>Account</h4><ul><li><a href="login.html">Log In</a></li><li><a href="signup.html">Sign Up</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Flowly Inc.</span><span>Template by Sitelabs</span></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flowly — Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-icon">F</div>
+      <span class="sidebar-logo-text">Flowly</span>
+    </div>
+    <div class="sidebar-section">Main</div>
+    <div class="sidebar-item active"><span class="si-icon">📊</span>Overview</div>
+    <div class="sidebar-item"><span class="si-icon">👥</span>Customers</div>
+    <div class="sidebar-item"><span class="si-icon">✅</span>Tasks</div>
+    <div class="sidebar-item"><span class="si-icon">📈</span>Analytics</div>
+    <div class="sidebar-section">Admin</div>
+    <div class="sidebar-item"><span class="si-icon">🧾</span>Billing</div>
+    <div class="sidebar-item"><span class="si-icon">👤</span>Team</div>
+    <div class="sidebar-item" onclick="window.location='index.html'"><span class="si-icon">⚙️</span>Settings</div>
+    <div class="sidebar-user">
+      <div class="su-avatar">SJ</div>
+      <div><div class="su-name">Sarah Johnson</div><div class="su-plan">Pro Plan</div></div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="dashboard-content">
+    <div class="dc-header">
+      <div>
+        <h1>Good morning, Sarah 👋</h1>
+        <p>Here's what's happening in your workspace today.</p>
+      </div>
+      <a href="index.html#features" style="display:inline-flex; align-items:center; gap:.5rem; background:var(--purple); color:white; padding:.65rem 1.25rem; border-radius:var(--radius); font-weight:700; font-size:.85rem;">+ New Task</a>
+    </div>
+
+    <!-- STAT CARDS -->
+    <div class="stat-cards">
+      <div class="stat-card highlight">
+        <div class="sc-icon">💰</div>
+        <div class="sc-label">Monthly Revenue</div>
+        <div class="sc-value">R84,200</div>
+        <div class="sc-change">↑ +12.4% vs last month</div>
+      </div>
+      <div class="stat-card">
+        <div class="sc-icon">👥</div>
+        <div class="sc-label">Active Customers</div>
+        <div class="sc-value">2,481</div>
+        <div class="sc-change" style="color:var(--success)">↑ +48 this week</div>
+      </div>
+      <div class="stat-card">
+        <div class="sc-icon">✅</div>
+        <div class="sc-label">Tasks Completed</div>
+        <div class="sc-value">143</div>
+        <div class="sc-change" style="color:var(--success)">↑ +18 today</div>
+      </div>
+      <div class="stat-card">
+        <div class="sc-icon">📈</div>
+        <div class="sc-label">Conversion Rate</div>
+        <div class="sc-value">3.8%</div>
+        <div class="sc-change" style="color:var(--success)">↑ +0.4% this month</div>
+      </div>
+    </div>
+
+    <!-- RECENT CUSTOMERS TABLE -->
+    <div class="data-table">
+      <div class="dt-header">
+        <h3>Recent Customers</h3>
+        <a href="#" style="font-size:.82rem; color:var(--purple); font-weight:700;">View all →</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Plan</th>
+            <th>Status</th>
+            <th>MRR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-weight:600;">James Mokoena</td>
+            <td>Nova Retail</td>
+            <td>Pro</td>
+            <td><span class="status-badge active">● Active</span></td>
+            <td style="font-weight:700; color:var(--purple)">R2,400</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Priya Naidoo</td>
+            <td>Summit Group</td>
+            <td>Business</td>
+            <td><span class="status-badge active">● Active</span></td>
+            <td style="font-weight:700; color:var(--purple)">R4,800</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Ruan de Wet</td>
+            <td>CoreTech SA</td>
+            <td>Pro</td>
+            <td><span class="status-badge pending">● Pending</span></td>
+            <td style="font-weight:700; color:var(--purple)">R2,400</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Amara Diallo</td>
+            <td>Bright Ideas</td>
+            <td>Starter</td>
+            <td><span class="status-badge active">● Active</span></td>
+            <td style="font-weight:700; color:var(--purple)">R799</td>
+          </tr>
+          <tr>
+            <td style="font-weight:600;">Tom Kriel</td>
+            <td>Nexus Digital</td>
+            <td>Business</td>
+            <td><span class="status-badge inactive">● Inactive</span></td>
+            <td style="color:var(--muted)">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- QUICK ACTIONS -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:1rem; margin-top:1.5rem;">
+      <a href="login.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center; transition:border-color .2s;" onmouseover="this.style.borderColor='var(--purple)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="font-size:1.5rem; margin-bottom:.5rem;">🔒</div>
+        <div style="font-size:.85rem; font-weight:700; color:var(--dark)">Sign Out</div>
+      </a>
+      <a href="pricing.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center; transition:border-color .2s;" onmouseover="this.style.borderColor='var(--purple)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="font-size:1.5rem; margin-bottom:.5rem;">⬆️</div>
+        <div style="font-size:.85rem; font-weight:700; color:var(--dark)">Upgrade Plan</div>
+      </a>
+      <a href="contact.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center; transition:border-color .2s;" onmouseover="this.style.borderColor='var(--purple)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="font-size:1.5rem; margin-bottom:.5rem;">💬</div>
+        <div style="font-size:.85rem; font-weight:700; color:var(--dark)">Get Support</div>
+      </a>
+      <a href="index.html" style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem; text-align:center; transition:border-color .2s;" onmouseover="this.style.borderColor='var(--purple)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="font-size:1.5rem; margin-bottom:.5rem;">🏠</div>
+        <div style="font-size:.85rem; font-weight:700; color:var(--dark)">Back to Home</div>
+      </a>
+    </div>
+  </main>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
